@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  font-weight: bold;
+  position: fixed !important;
+  margin: 1rem;
+
+  div {
+    display: flex;
+    align-items: center;
+    height: 47px;
+    margin: 0px 0.8rem;
+  }
+
+}
+
+.isHome {
+  fill: #ffffff !important;
+}

@@ -1,0 +1,137 @@
+.wrapper {
+  background-image: url("../../assets/mainbg.svg");
+  background-size: cover;
+
+  .top {
+    height: 15%;
+
+    .title {
+      margin: auto;
+      display: flex;
+      height: 300px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
+      .subTitle {
+        width: 392px;
+        height: 30px;
+        margin-top: 1.8rem;
+        font-family: S-CoreDream-5;
+        font-size: 26px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.8;
+        letter-spacing: 1.3px;
+        text-align: center;
+        color: #333;
+        display: block;
+      }
+
+      .resultTitle {
+        width: 350px;
+        height: 34px;
+        font-family: S-CoreDream-7;
+        margin-top: 1rem;
+        font-size: 40px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: 2.3px;
+        text-align: center;
+        color: #fafafa;
+        display: block;
+      }
+
+
+    }
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .resultIcon {
+      width: 270px;
+      height: 270px;
+      background-color: white;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .subContents {
+      height: 320px;
+
+      .contentBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 200px;
+        margin: 1.2rem;
+
+        .blockTitle {
+          margin: 2px 10px;
+          width: 92px;
+          height: 32px;
+          font-family: S-CoreDream-6;
+          font-size: 18px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 4;
+          letter-spacing: 1.15px;
+          text-align: left;
+          color: #5f66f2;
+        }
+
+        .blockContents {
+          display: block;
+          width: 100%;
+          margin: 5px 10px;
+          height: 25px;
+          font-family: S-CoreDream-4;
+          font-size: 19px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 3.13;
+          letter-spacing: 1.15px;
+          text-align: left;
+          color: #666;
+        }
+
+      }
+    }
+
+    .sendResult {
+      display: flex;
+      flex-direction: row;
+
+      margin: 2.6rem;
+
+      > div {
+        margin: 0 1rem;
+      }
+
+      > span {
+        height: 53px;
+        font-family: S-CoreDream-5;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #666;
+      }
+    }
+  }
+}

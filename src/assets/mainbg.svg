@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1921 1080">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #5f66f2;
+      }
+
+      .cls-2 {
+        isolation: isolate;
+        opacity: .36;
+      }
+    </style>
+  </defs>
+  <path id="_패스_147" data-name="패스 147" class="cls-2" d="m-8.16,338.93l346.86,121.73,1009.04-77.33,333.87,54.67,255.97-54.67,7.42-318.67H-23l14.84,274.27Z"/>
+  <path id="_패스_146" data-name="패스 146" class="cls-1" d="m-21.67-4h1966.67v401.78l-551.03-80.62-805.22,134.38L106.36,294.32-21.66,376.28V-4"/>
+</svg>

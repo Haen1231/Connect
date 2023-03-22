@@ -1,0 +1,120 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+
+  .logoWrapper {
+  }
+
+  .contentWrapper {
+    padding: 70px 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .BtnWrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .button {
+        width: 300px;
+        height: 60px;
+        font-weight: 600;
+        margin-top: 100px;
+        padding: 10px;
+        border-radius: 31px;
+        background-color: #5f66f2;
+        font-size: 25px;
+        border: none;
+        color: white;
+
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+    }
+
+    .content {
+      margin: auto;
+      padding: 30px;
+      width: 650px;
+      height: 470px;
+
+      .num {
+        font-family: S-CoreDream-7ExtraBold;
+        font-size: 45px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.79;
+        letter-spacing: 3.05px;
+        color: #5f66f2;
+        display: block;
+      }
+
+      .question {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 2px 40px 2px;
+
+        .title {
+          font-family: S-CoreDream-5;
+          font-size: 27px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 2.33;
+          letter-spacing: 1.65px;
+          text-align: left;
+          color: #333;
+        }
+
+        .subtitle {
+          font-family: S-CoreDream-3;
+          font-size: 16px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.67;
+          letter-spacing: 0.9px;
+          text-align: left;
+          color: grey;
+        }
+
+        .checkbox {
+          display: flex;
+          align-items: center;
+
+          > div {
+            margin: 1rem;
+          }
+
+          > span {
+            font-family: S-CoreDream-4;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 3.78;
+            letter-spacing: 1.35px;
+            text-align: center;
+            color: grey;
+          }
+
+          .isCheckOn {
+            color: #5f66f2;
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+}
