@@ -1,0 +1,35 @@
+.wrapper {
+  margin: 50px 10px;
+
+
+  > div {
+
+    white-space: nowrap;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(120px, auto));
+    grid-template-columns: repeat(2, minmax(220px, auto));
+
+    .item {
+      white-space: normal;
+      width: 250px;
+      height: 90px;
+      background-color: #eeeeee;
+      color: grey;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: S-CoreDream-3;
+      font-size: 20px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 1.5px;
+    }
+  }
+}
+
+.isClicked {
+  background-color: #5f66f2 !important;
+  color: white !important;
+}

@@ -4,6 +4,7 @@ export interface QuestItem {
   duplication: boolean;
   option: string[];
   notice: string;
+  componentNo: number;
 }
 
 export const questionList = [
@@ -22,7 +23,8 @@ export const questionList = [
       '글로벌',
     ],
     notice:
-        '각 사업유형에 대해 자세하게 알고 싶다면 아래의 링크를 클릭해보세요.(링크 주소~)',
+      '각 사업유형에 대해 자세하게 알고 싶다면 아래의 링크를 클릭해보세요.(링크 주소~)',
+    componentNo: 1,
   },
   {
     id: 2,
@@ -60,10 +62,11 @@ export const questionList = [
       '관광',
     ],
     notice: '',
+    componentNo: 1,
   },
   {
     id: 3,
-    quest: '본인의 아이템과 관련있는 키워드를 선택해주세요.(중복가능)',
+    quest: '본인의 아이템과 관련있는 키워드를 선택해주세요.',
     duplication: true,
     option: [
       '해당없음',
@@ -83,20 +86,23 @@ export const questionList = [
       '관광',
     ],
     notice: '',
+    componentNo: 1,
   },
   {
     id: 4,
-    quest: '본인의 아이템과 관련있는 키워드를 선택해주세요.(중복가능)',
+    quest: '본인의 아이템과 관련있는 키워드를 선택해주세요.',
     duplication: true,
     option: ['해당없음', '글로벌(해외, 현지매출)', '사회적', '비대면'],
     notice: '',
+    componentNo: 2,
   },
   {
     id: 5,
-    quest: '현재 보유하고 있는 것을 선택해주세요.(중복가능)',
+    quest: '현재 보유하고 있는 것을 선택해주세요.',
     duplication: true,
     option: ['해당없음', '특허권(특허)', '품종보호권', '지식재산권'],
     notice: '선택하면 개수 입력 창 생기게 하기',
+    componentNo: 2,
   },
   {
     id: 6,
@@ -104,14 +110,16 @@ export const questionList = [
     duplication: false,
     option: ['O(재창업)', 'X'],
     notice:
-        'X인 경우 ‘장애’가 들어간 행 제외하고 재창업 관련 키워드가 들어간 행 모두 제거',
+      'X인 경우 ‘장애’가 들어간 행 제외하고 재창업 관련 키워드가 들어간 행 모두 제거',
+    componentNo: 3,
   },
   {
     id: 7,
-    quest: '사업자등록을 한적이 있나요? ※개인사업자, 법인 모두 포함 (중복불가)',
+    quest: '사업자등록을 한적이 있나요? ※개인사업자, 법인 모두 포함 ',
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 3,
   },
   {
     id: 8,
@@ -119,6 +127,7 @@ export const questionList = [
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 3,
   },
   {
     id: 9,
@@ -126,6 +135,7 @@ export const questionList = [
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 3,
   },
   {
     id: 10,
@@ -133,13 +143,15 @@ export const questionList = [
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 3,
   },
   {
     id: 11,
     quest: '사업자등록을 한적이 있나요? ※개인사업자, 법인 모두 포함 (중복불가)',
     duplication: false,
-    option: ['O', 'X(생애최초)'],
+    option: ['해당없음', '장애', '취약계층', '귀산촌인', '외국'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 1,
   },
   {
     id: 12,
@@ -147,6 +159,7 @@ export const questionList = [
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 3,
   },
   {
     id: 13,
@@ -154,18 +167,23 @@ export const questionList = [
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
-  }, {
+    componentNo: 3,
+  },
+  {
     id: 14,
     quest: '사업자등록을 한적이 있나요? ※개인사업자, 법인 모두 포함 (중복불가)',
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
-  }, {
+    componentNo: 3,
+  },
+  {
     id: 15,
     quest: '사업자등록을 한적이 있나요? ※개인사업자, 법인 모두 포함 (중복불가)',
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 3,
   },
   {
     id: 16,
@@ -173,13 +191,25 @@ export const questionList = [
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 3,
   },
   {
     id: 17,
     quest: '사업자등록을 한적이 있나요? ※개인사업자, 법인 모두 포함 (중복불가)',
     duplication: false,
-    option: ['O', 'X(생애최초)'],
+    option: [
+      '해당없음',
+      '개인사업자',
+      '법인',
+      '사내벤처',
+      '거점대학',
+      '초중고등학교',
+      '대안학교',
+      '학교밖센터',
+      '전환창업',
+    ],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 1,
   },
   {
     id: 18,
@@ -187,6 +217,7 @@ export const questionList = [
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 3,
   },
   {
     id: 19,
@@ -194,6 +225,7 @@ export const questionList = [
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 3,
   },
   {
     id: 20,
@@ -201,6 +233,7 @@ export const questionList = [
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 3,
   },
   {
     id: 21,
@@ -208,6 +241,7 @@ export const questionList = [
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 3,
   },
   {
     id: 22,
@@ -215,7 +249,6 @@ export const questionList = [
     duplication: false,
     option: ['O', 'X(생애최초)'],
     notice: 'O인 경우 생애최초가 들어간 행 모두 제거',
+    componentNo: 3,
   },
-
-
 ];

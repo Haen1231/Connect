@@ -25,9 +25,37 @@
       margin: auto;
       padding: 30px;
       width: 650px;
-      height: 470px;
+      height: 460px;
+
+      .contentOption {
+        width: 100%;
+        height: 460px;
+        overflow-x: scroll;
+        padding: 40px 0;
+      }
     }
+  }
+
+  .progressWrapper {
+    display: flex;
+    justify-content: center;
+
+    .progressBar {
+      width: 1050px;
+      height: 6px;
+      border-radius: 30px;
+      background-color: #dbdbdb;
+
+      .nowState {
+        height: 6px;
+        border-radius: 30px;
+        background-color: #5f66f2;
+      }
+    }
+
   }
 
 
 }
+
+

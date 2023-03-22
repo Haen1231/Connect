@@ -2,7 +2,6 @@ import React from 'react';
 
 import { ReactComponent as SendLogo } from '.././../assets/sendResult.svg';
 import ResultIcon from '../../assets/resultIcon.png';
-import ResultIconBg from '../../assets/resultIconBg.png';
 import Logo from '../../components/Logo/Logo';
 
 import styles from './ResultPage.module.scss';

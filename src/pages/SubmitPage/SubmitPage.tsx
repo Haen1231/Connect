@@ -33,6 +33,11 @@ const SubmitPage: React.FC = () => {
       navigate(`/selects/${changePage}`);
     }
   };
+
+  const onSubmit = () => {
+    navigate('/result');
+  };
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.logoWrapper}>
@@ -84,7 +89,9 @@ const SubmitPage: React.FC = () => {
         </div>
         <div className={styles.BtnWrapper}>
           <IconButton onClick={() => onClickButton(-1)} icon={prev} />
-          <button className={styles.button}>테스트 제출하기</button>
+          <button className={styles.button} onClick={onSubmit}>
+            테스트 제출하기
+          </button>
           <IconButton onClick={() => onClickButton(1)} icon={next} />
         </div>
       </div>
