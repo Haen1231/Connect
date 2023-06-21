@@ -11,7 +11,6 @@ export interface Props {
 
 const Option1: React.FC<Props> = (Items) => {
   const numItem = Math.ceil(Items.Options.length / 2);
-  let idx = 0;
 
   return (
     <div className={styles.wrapper}>
@@ -22,9 +21,8 @@ const Option1: React.FC<Props> = (Items) => {
           width: numItem * 180,
         }}
       >
-        {Items.Options?.map((item) => {
-          ++idx;
-          return <ItemDiv value={item} mykey={idx} key={idx} styles={styles} />;
+        {Items.Options?.map((item, i) => {
+          return <ItemDiv value={item} mykey={i} key={i} styles={styles} />;
         })}
       </div>
     </div>
